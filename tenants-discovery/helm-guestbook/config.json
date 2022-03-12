@@ -2,7 +2,7 @@
   "tenant": {
     "owner": "guestbook@ecorp.com",
     "name": "E Corp",
-    "id": "guest"
+    "id": "helm-guestbook"
   },
   "k8s_cluster": {
     "owner": "admin@company.com",

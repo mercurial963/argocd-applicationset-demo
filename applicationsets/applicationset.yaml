@@ -25,7 +25,9 @@ spec:
         server: '{{k8s_cluster.address}}'
         namespace: '{{k8s_cluster.namespace}}'
       syncPolicy:
-        automated: {}
+        automated: 
+          prune: true # Specifies if resources should be pruned during auto-syncing ( false by default ).
+          selfHeal: true
       ignoreDifferences:
       # - group: *
       - kind: "Deployment"
