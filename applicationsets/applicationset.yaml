@@ -30,6 +30,6 @@ spec:
           selfHeal: true
       ignoreDifferences:
       # - group: *
-      - kind: "Deployment"
-        jsonPointers:
-        - /spec/replicas
+      # - kind: "Deployment"
+      #   jsonPointers:
+      #   - /spec/replicas
