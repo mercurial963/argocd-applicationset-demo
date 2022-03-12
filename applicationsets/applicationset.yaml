@@ -27,7 +27,7 @@ spec:
       syncPolicy:
         automated: {}
       ignoreDifferences:
-      - group: *
-        kind: "Deployment"
+      # - group: *
+      - kind: "Deployment"
         jsonPointers:
         - /spec/replicas
