@@ -33,7 +33,9 @@ spec:
         automated: 
           prune: true # Specifies if resources should be pruned during auto-syncing ( false by default ).
           selfHeal: true
-      ignoreDifferences:
+        retry:
+          limit: 5
+      # ignoreDifferences:
       # - group: *
       # - kind: "Deployment"
       #   jsonPointers:
