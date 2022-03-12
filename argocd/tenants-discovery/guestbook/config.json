@@ -1,0 +1,12 @@
+{
+  "tenant": {
+    "owner": "guestbook@ecorp.com",
+    "name": "E Corp",
+    "id": "guest"
+  },
+  "k8s_cluster": {
+    "owner": "admin@company.com",
+    "address": "https://kubernetes.default.svc",
+    "namespace": "argocd"
+  }
+}
