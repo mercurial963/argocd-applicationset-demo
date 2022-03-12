@@ -8,7 +8,7 @@ spec:
         repoURL: https://github.com/mercurial963/argocd-applicationset-demo.git
         revision: main
         files:
-          - path: "argocd/tenants-discovery/**/config.json"
+          - path: "tenants-discovery/**/config.json"
   template:
     metadata:
       name: '{{tenant.id}}'
@@ -26,3 +26,8 @@ spec:
         namespace: '{{k8s_cluster.namespace}}'
       syncPolicy:
         automated: {}
+      ignoreDifferences:
+      - group: *
+        kind: "Deployment"
+        jsonPointers:
+        - /spec/replicas
